@@ -12,8 +12,7 @@ Heavy rendering and CPU overhead.
 Measured FPS: ~8.
 
 # 2. After Optimization
-
-~00 cubes spread throughout the level.
+200 cubes spread throughout the level.
 Much lower actor and draw call count.
 Measured FPS: 20–30.
 
@@ -29,8 +28,3 @@ This was the primary source of the FPS improvement.
 
 All cubes were checked for mobility settings (Static / Movable).
 This helped identify how mobility settings affect cost, even though the main gain came from reducing actor count.
-
-Before/After Metrics
-Scenario	Cube Count	FPS
-Before	~20,000	~8
-After	~200	20–30
